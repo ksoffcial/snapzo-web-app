@@ -2,14 +2,14 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='mt-2 bg-black lg:px-10 py-4'>
+    <div className='mt-22 bg-black lg:px-10 py-4'>
       <div className='flex justify-center gap-8 flex-wrap items-center'>
 
 
         {/* LEFT BOX WHERE WE HAVE THE FOR USER PANNEL */}
         <div className='lg:flex-1  '>
           <h1 className='lg:text-5xl text-2xl mb-4 font-bold uppercase text-[#8789c0]'>Capture Your <span className='text-[#6DE2E5]'>World Upgrade Your</span>  Camera Today!</h1>
-          <h2 className='lg:text-2xl text-xl font-medium text-[#8789c0] mb-6'>Buy,sales,services and Upgrade gear all in one place</h2>
+          <h2 className='lg:text-2xl text-xl font-medium text-[#6DE2E5] mb-6'>Buy,sales,services and Upgrade gear all in one place</h2>
           <div className='social-icon flex gap-x-4 mb-6'>
             <i className="fa-brands fa-instagram"></i>
             <i className="fa-brands fa-facebook-f"></i>

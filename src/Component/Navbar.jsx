@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div >
             {/* NAVBAR IS  STARTING FORM  HERE */}
-            <nav className=' flex lg:px-10 items-center justify-between py-4 bg-black'>
+            <nav className=' flex lg:px-10 items-center justify-between py-4 bg-black z-50 top-0 fixed w-full'>
                 {/* THIS IS THE LOGO SECTION  */}
                 <div className='flex items-center text-5xl font-bold'>
                     {/* <h2>logo <br /> pannel</h2> */}
