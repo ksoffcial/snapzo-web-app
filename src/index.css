@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.navbar_btn{
+    @apply flex border border-[#7cc6fe]  text-[#7cc6fe] gap-x-1  px-2.5 py-1.5 rounded-xl font-bold cursor-pointer;
+}
+.navbar_btn:hover{
+    @apply bg-[#7cc6fe] text-black;
+}
