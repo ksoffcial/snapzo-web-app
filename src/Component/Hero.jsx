@@ -8,16 +8,16 @@ const Hero = () => {
 
         {/* LEFT BOX WHERE WE HAVE THE FOR USER PANNEL */}
         <div className='lg:flex-1  '>
-          <h1 className='lg:text-5xl text-2xl mb-4 font-bold uppercase text-[#8789c0]'>Capture Your <span className='text-[#6DE2E5]'>World Upgrade Your</span>  Camera Today!</h1>
-          <h2 className='lg:text-2xl text-xl font-medium text-[#6DE2E5] mb-6'>Buy,sales,services and Upgrade gear all in one place</h2>
-          <div className='social-icon flex gap-x-4 mb-6'>
+          <h1 className='lg:text-5xl text-2xl lg:mb-8 mb-4 font-bold uppercase text-[#8789c0]'>Capture Your <span className='text-[#6DE2E5]'>World Upgrade Your</span>  Camera Today!</h1>
+          <h2 className='lg:text-2xl text-xl font-medium text-[#6DE2E5] lg:mb-8'>Buy,sales,services and Upgrade gear all in one place</h2>
+          <div className='social-icon flex gap-x-4 lg:mb-8'>
             <i className="fa-brands fa-instagram"></i>
             <i className="fa-brands fa-facebook-f"></i>
             <i className="fa-brands fa-x-twitter"></i>
             <i className="fa-brands fa-youtube"></i>
           </div>
           <div>
-            <button className='px-10 py-2 bg-[#484965] rounded-xl font-medium cursor-pointer'>Expore All</button>
+            <button className='px-20 py-2 bg-[#484965] rounded-xl font-medium cursor-pointer'>Expore All</button>
 
           </div>
         </div>
