@@ -1,19 +1,30 @@
-import React from 'react'
 import Navbar from './Component/Navbar'
-import Hero from './Component/Hero'
-import BoxSlider from './Component/BoxSlider'
-import Specalities from './Component/Specalities'
-import FirstPro from './Component/FirstPro'
+import Login from './Component/Login'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Home'
+import Explore from './Component/Explore'
+import Signup from './Component/Signup'
+
 
 const App = () => {
   return (
     <div>
+      <Navbar />
 
-      <Navbar/>
-      <Hero/>
-      <BoxSlider/>
-      <Specalities/>
-      <FirstPro/>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/explore' element={<Explore/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+      </Routes>
+
+
+
+
+
+
+
     </div>
   )
 }

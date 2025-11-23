@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+  const navigate = useNavigate()
+
+  const Explorebtn=()=>{
+    navigate("/explore")
+  }
+
   return (
     <div className='mt-22 bg-black lg:px-10 py-4'>
       <div className='flex justify-center gap-8 flex-wrap items-center'>
@@ -17,7 +24,7 @@ const Hero = () => {
             <i className="fa-brands fa-youtube"></i>
           </div>
           <div>
-            <button className='px-20 py-2 bg-[#484965] rounded-xl font-medium cursor-pointer'>Expore All</button>
+            <button onClick={Explorebtn} className='px-20 py-2 bg-[#484965] rounded-xl font-medium cursor-pointer'>Expore All</button>
 
           </div>
         </div>
