@@ -5,6 +5,7 @@ import Home from './Home'
 import Explore from './Component/Explore'
 import Signup from './Component/Signup'
 import ContactUs from './Component/ContactUs'
+import Cart from './Component/Cart'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/explore' element={<Explore/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/contactus' element={<ContactUs/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
 
 
