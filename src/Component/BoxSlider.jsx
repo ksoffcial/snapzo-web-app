@@ -23,8 +23,8 @@ const BoxSlider = () => {
 
             <div className='flex gap-8 flex-wrap mt-5 '>
                 {
-                    sliderData.map(data => (
-                        <div className='bg-white/10 px-6 py-3 lg:flex-1 rounded-lg'>
+                    sliderData.map((data,idx) => (
+                        <div className='bg-white/10 px-6 py-3 lg:flex-1 rounded-lg' key={idx}>
                             <h2 className='text-4xl '>{data.icon}</h2>
                             <h2 className='text-3xl font-bold my-2 text-[#7CC6FE]'>{data.heading}</h2>
                             <p className='text-[#BEC2E0] font-semibold'>{data.desc}</p>

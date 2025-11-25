@@ -32,8 +32,8 @@ const Specalities = () => {
 
       <div className='flex flex-wrap gap-4'>
         {
-          specialData.map(data => (
-            <div className='flex-1 rounded-xl text-center p-4 bg-white/20'>
+          specialData.map((data,idx) => (
+            <div className='flex-1 rounded-xl text-center p-4 bg-white/20' key={idx}>
               <img src={data.image} alt="" className='size-32 rounded-full object-cover mx-auto' />
               <h2 className='mt-4 text-xl font-bold text-purple-100'>{data.name}</h2>
             </div>

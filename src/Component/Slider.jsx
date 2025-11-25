@@ -21,6 +21,14 @@ const Slider = ({image}) => {
         }
     }
 
+    setTimeout(() => {
+        if(imgnum<3){
+            setImgnum(imgnum+1)
+        }
+        else{
+            setImgnum(0)
+        }
+    }, 2000);
 
     return (
         <div className='flex items-center justify-center gap-x-10 mt-20 bg-white'>
