@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { dataContext } from '../Contexdata'
+import { Delete } from 'lucide-react';
 
 const Cart = () => {
   const [details, setDetails] = useContext(dataContext)
@@ -8,7 +9,11 @@ const Cart = () => {
     return sum + parseInt(item.sellPrice);
   }, 0);
 
-
+  const handletodelete=(idx)=>{
+    const copyDetails = [...details]
+    copyDetails.splice(idx,1)
+    setDetails(copyDetails)
+  }
 
   return (
     <div className='mt-24'>
@@ -35,6 +40,11 @@ const Cart = () => {
                   <button>+</button>
                 </div>
                 <h2>₹{data.sellPrice}</h2>
+                <div>
+                  <h1 onClick={()=>handletodelete(idx)}>
+                    <Delete size={40} strokeWidth={0.75} />
+                  </h1>
+                </div>
               </div>
             ))}
           </div>
